@@ -1,5 +1,6 @@
 import { Route } from "./route.js";
 import { Cliente } from "./pages/cliente.js";
+import { Estado } from "./pages/estadocliente.js";
 
 
 export class Controller
@@ -18,6 +19,7 @@ export class Controller
             case "index":
             case "home":
                 new Cliente().criar();
+                new Estado().criar();
                 break;
 
         }

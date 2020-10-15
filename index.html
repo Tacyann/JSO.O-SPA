@@ -1,12 +1,32 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Produto</title>
-</head>
-<body>
-    <div id="index"></div>
-    <script type="module" src="js/app.js"></script>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewpoint" content="width=device-widht, initial-scale=1.0"/>
+        <script type="text/javascript" src="js/app.js"></script> 
+        <script src="jquery-3.5.1.min.js"></script>
+        <title>index</title>
+        </head>
+        <body>
+            <form id="formulario" method="POST">
+                <label for="a_matricula">Matrícula:</label>
+         <input type="text" id="matricula" name="matricula"><br><br>
+         <label for="b_nome">Nome do Estudante:</label>
+         <input type="text" id="nome_do_estudante" name="nome_do_estudante"><br><br>
+         <label for="c_nome">Nome do cliente:</label>
+         <input type="text" id="nome_do_cliente" name="nome_do_cliente"><br><br>
+         <label for="d_endereco">Endereço do Cliente:</label>
+         <input type="text" id="endereco_do_cliente" name="endereco_do_cliente"><br><br>
+         <label for="e_estado_do_cliente">Estado do cliente: </label>
+         <select id="estado"></select>
+         <br><br>
+         <label for="f_cidade_do_cliente">Cidade do cliente: </label>
+         <select id="cidade"></select>
+
+         <br><br>
+         <input type="submit" id="send" value="Enviar">
+
+     </form>    
 </body>
 </html>

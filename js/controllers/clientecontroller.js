@@ -13,8 +13,6 @@ export class ClienteController
             "nomeEstudante": props.nomeEstInput.value,
             "nomeCliente": props.nomeClienteInput.value,
             "endereco": props.enderecoInput.value,
-            "estado": props.estadoInput.value,
-            "cidade": props.cidadeInput.value,
              
         }
 
