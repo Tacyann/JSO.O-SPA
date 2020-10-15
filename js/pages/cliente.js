@@ -19,7 +19,7 @@ export class Cliente
         index.append(p1);
 
         let nomeEstLabel = document.createElement("label");
-        nomeEstLabel.textContent = "Nome do Estudante:: ";
+        nomeEstLabel.textContent = "Nome do Estudante: ";
         index.append(nomeEstLabel);
 
         let nomeEstInput = document.createElement("input");
@@ -29,13 +29,25 @@ export class Cliente
         let p2 = document.createElement("p");
         index.append(p2);
 
+        let nomeClienteLabel = document.createElement("label");
+        nomeClienteLabel.textContent = "Nome do Cliente: ";
+        index.append(nomeEstLabel);
+
+        let nomeClieInput = document.createElement("input");
+        nomeClienteInput.type = "text";
+        index.append(nomeClienteInput);
+
+        let p3 = document.createElement("p");
+        index.append(p3);
+
         let botao = document.createElement("button");
         botao.textContent = "Enviar";
 
         botao.addEventListener("click", ()=>{
             new clienteController().setClick({
-                clienteInput,
-                valorInput
+                matriculaInput,
+                nomeEstInput,
+                nomeClienteInput,
             });
         });
         
