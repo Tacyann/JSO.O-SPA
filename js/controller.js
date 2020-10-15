@@ -19,7 +19,6 @@ export class Controller
             case "index":
             case "home":
                 new Cliente().criar();
-                new Estado().criar();
                 break;
 
         }
