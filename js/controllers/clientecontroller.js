@@ -9,8 +9,13 @@ export class ClienteController
     {
 
         this.dado = {
-            "nome": props.clienteInput.value,
-            "valor": props.nomeEstInput.value
+            "matriculaEstudante": props.matriculaInput.value,
+            "nomeEstudante": props.nomeEstInput.value,
+            "nomeCliente": props.nomeClienteInput.value,
+            "endereco": props.enderecoInput.value,
+            "estado": props.estadoInput.value,
+            "cidade": props.cidadeInput.value,
+             
         }
 
         // != get
